@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private PlayerDataSo player;
     [SerializeField] private Rigidbody2D rbPlayer;
-    [SerializeField] private float moveSpeed = 1f;
 
     private void Awake()
     {
@@ -12,6 +12,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rbPlayer.linearVelocity = new Vector2(moveSpeed, rbPlayer.linearVelocity.y); 
+        rbPlayer.linearVelocity = new Vector2(player.initialSpeed, rbPlayer.linearVelocity.y); 
     }
 }

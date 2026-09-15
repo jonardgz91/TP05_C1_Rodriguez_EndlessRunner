@@ -4,7 +4,6 @@ public class PlayerJump : MonoBehaviour
 {
     [SerializeField] private PlayerDataSo player;
     [SerializeField] private Rigidbody2D rbPlayer;
-    public float jumpForce = 5f;
     private bool isFloor;
 
     private void Awake()
@@ -15,7 +14,7 @@ public class PlayerJump : MonoBehaviour
     {
         if (isFloor && Input.GetKeyDown(player.jump))
         {
-            rbPlayer.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            rbPlayer.AddForce(Vector2.up * player.jumpForce, ForceMode2D.Impulse);
         }
     }
 
