@@ -177,7 +177,7 @@ Transform:
   m_GameObject: {fileID: 177868671}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8, y: -3, z: 10}
+  m_LocalPosition: {x: 8, y: -2, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -268,7 +268,7 @@ Transform:
   m_GameObject: {fileID: 226472947}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8, y: 2, z: 10}
+  m_LocalPosition: {x: 8, y: 3, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -344,6 +344,7 @@ GameObject:
   - component: {fileID: 320911922}
   - component: {fileID: 320911926}
   - component: {fileID: 320911927}
+  - component: {fileID: 320911929}
   - component: {fileID: 320911924}
   - component: {fileID: 320911923}
   - component: {fileID: 320911928}
@@ -565,6 +566,21 @@ PolygonCollider2D:
       - {x: 0.35999998, y: -0.85499996}
       - {x: 0.47, y: -0.575}
   m_UseDelaunayMesh: 1
+--- !u!114 &320911929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320911921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f45d741aa63a35e468490addc627b545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollide
+  player: {fileID: 11400000, guid: 9299e827c124f9941bac51a2e7dcae7b, type: 2}
+  rbPlayer: {fileID: 320911923}
+  pauseCanva: {fileID: 619177336}
 --- !u!1 &375517656
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +639,7 @@ Transform:
   m_GameObject: {fileID: 413210094}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7, y: -3, z: 10}
+  m_LocalPosition: {x: -7, y: -2, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -714,7 +730,7 @@ Transform:
   m_GameObject: {fileID: 437400645}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: -3, z: 10}
+  m_LocalPosition: {x: -2, y: -2, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -805,7 +821,7 @@ Transform:
   m_GameObject: {fileID: 445455929}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: -3, z: 10}
+  m_LocalPosition: {x: 3, y: -2, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1062,7 +1078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineBrain
   playerTarget: {fileID: 320911922}
-  offset: {x: 7, y: 3, z: -10}
+  offset: {x: 7, y: 2, z: -10}
 --- !u!1 &619177336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,10 +1088,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 619177337}
+  - component: {fileID: 619177341}
   - component: {fileID: 619177340}
   - component: {fileID: 619177339}
   - component: {fileID: 619177338}
-  - component: {fileID: 619177341}
   m_Layer: 5
   m_Name: Pause Canva
   m_TagString: Untagged
@@ -1416,7 +1432,7 @@ Transform:
   m_GameObject: {fileID: 1202332796}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 2, z: 10}
+  m_LocalPosition: {x: -2, y: 3, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1609,7 +1625,7 @@ Transform:
   m_GameObject: {fileID: 1338791360}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7, y: 2, z: 10}
+  m_LocalPosition: {x: -7, y: 3, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1838,7 +1854,7 @@ Transform:
   m_GameObject: {fileID: 1982894704}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: 2, z: 10}
+  m_LocalPosition: {x: 3, y: 3, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1979,34 +1995,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 375517657}
     m_Modifications:
-    - target: {fileID: 360494391594178576, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 360494391594178576, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1906388241577452751, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
-      propertyPath: LeftLimit
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4005712010817786300, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -5825270381819860520, guid: 38ced7ec2fb83c540860ab2d75f62083, type: 3}
     - target: {fileID: 4618768053261230176, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
       propertyPath: m_Name
+      value: EnemyGreenCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 4618768053261230176, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
+      propertyPath: m_TagString
       value: EnemyGreenCube
       objectReference: {fileID: 0}
     - target: {fileID: 5036907680658501717, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 320911922}
-    - target: {fileID: 5036907680658501717, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
-      propertyPath: xOffset
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 6090705872389677263, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10
@@ -2046,10 +2046,6 @@ PrefabInstance:
     - target: {fileID: 6090705872389677263, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8779556118406360815, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
-      propertyPath: m_BodyType
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -10,6 +10,7 @@ public class PlayerJump : MonoBehaviour
     {
         rbPlayer = GetComponent<Rigidbody2D>();
     }
+
     private void Update()
     {
         if (isFloor && Input.GetKeyDown(player.jump))
