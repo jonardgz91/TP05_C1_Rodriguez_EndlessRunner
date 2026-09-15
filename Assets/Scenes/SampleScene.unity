@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 320911922}
   - component: {fileID: 320911926}
+  - component: {fileID: 320911927}
   - component: {fileID: 320911924}
   - component: {fileID: 320911923}
   - component: {fileID: 320911925}
@@ -180,7 +181,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 1
+  m_Constraints: 0
 --- !u!212 &320911924
 SpriteRenderer:
   serializedVersion: 2
@@ -301,6 +302,20 @@ MonoBehaviour:
   player: {fileID: 11400000, guid: 9299e827c124f9941bac51a2e7dcae7b, type: 2}
   rbPlayer: {fileID: 320911923}
   jumpForce: 5
+--- !u!114 &320911927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320911921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3628ea3db0627ea4ba26490801cf01f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  rbPlayer: {fileID: 320911923}
+  moveSpeed: 10
 --- !u!1 &375517656
 GameObject:
   m_ObjectHideFlags: 0
