@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AudioCollisionHandle : MonoBehaviour
+public class PlayerAudioCollisionHandle : MonoBehaviour
 {
     [SerializeField] private AudioClip jumpSound;
     [SerializeField] private AudioClip landSound;

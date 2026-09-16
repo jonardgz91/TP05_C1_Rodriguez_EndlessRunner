@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class PlayerCollide : MonoBehaviour
 {
-    [SerializeField] private PlayerDataSo player;
     [SerializeField] private Rigidbody2D rbPlayer;
-    [SerializeField] private GameObject pauseCanva;
+    [SerializeField] private GameObject panelGameOver;
     private bool isOver;
 
     private void Awake()
@@ -17,11 +16,11 @@ public class PlayerCollide : MonoBehaviour
         if (isOver)
         {
             Time.timeScale = 0;
-            pauseCanva.SetActive(true);
+            panelGameOver.SetActive(true);
         }
         else 
         {
-            pauseCanva.SetActive(false);
+            panelGameOver.SetActive(false);
         }
     }
 

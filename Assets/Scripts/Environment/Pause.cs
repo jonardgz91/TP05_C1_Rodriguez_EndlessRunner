@@ -3,10 +3,10 @@ using UnityEngine;
 public class Pause : MonoBehaviour
 {
     [SerializeField] private KeyCode pauseGame = KeyCode.Escape;
-    [SerializeField] private GameObject pauseCanva;
+    [SerializeField] private GameObject panelPause;
     private bool isPaused = false;
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(pauseGame))
         {
@@ -14,12 +14,12 @@ public class Pause : MonoBehaviour
             if (isPaused)
             {
                 Time.timeScale = 0;
-                pauseCanva.SetActive(true);
+                panelPause.SetActive(true);
             }
             else
             {
                 Time.timeScale = 1;
-                pauseCanva.SetActive(false);
+                panelPause.SetActive(false);
             }
         }
     }
