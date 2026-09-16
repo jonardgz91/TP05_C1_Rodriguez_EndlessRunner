@@ -19,6 +19,10 @@ public class PlayerCollide : MonoBehaviour
             Time.timeScale = 0;
             pauseCanva.SetActive(true);
         }
+        else 
+        {
+            pauseCanva.SetActive(false);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
