@@ -1,10 +1,10 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class BtnContinue : MonoBehaviour
 {
     [SerializeField] private Button btnContinue;
+    [SerializeField] private GameObject panelPause;
 
     private void Awake()
     {
@@ -18,6 +18,7 @@ public class BtnContinue : MonoBehaviour
 
     private void ContinueClicked()
     {
-        
+        panelPause.SetActive(false);
+        Time.timeScale = 1;
     }
 }

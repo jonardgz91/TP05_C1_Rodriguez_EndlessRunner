@@ -1480,6 +1480,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 589267650}
+  - component: {fileID: 589267654}
   - component: {fileID: 589267653}
   - component: {fileID: 589267652}
   - component: {fileID: 589267651}
@@ -1592,6 +1593,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589267649}
   m_CullTransparentMesh: 1
+--- !u!114 &589267654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589267649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad86ea42d6e5b94aa037d75fb85d6a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BtnContinue
+  btnContinue: {fileID: 589267651}
+  panelPause: {fileID: 447428904}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,6 +1933,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 815491596}
+  - component: {fileID: 815491600}
   - component: {fileID: 815491599}
   - component: {fileID: 815491598}
   - component: {fileID: 815491597}
@@ -2030,6 +2046,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815491595}
   m_CullTransparentMesh: 1
+--- !u!114 &815491600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815491595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07edcbc072bd2724381a47a67482f4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BtnSettings
+  btnSettings: {fileID: 815491597}
+  panelPause: {fileID: 447428904}
+  panelSettings: {fileID: 1206989571}
 --- !u!1 &951064844
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,11 +2610,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1297647571}
+  - component: {fileID: 1297647572}
+  - component: {fileID: 1297647573}
   - component: {fileID: 1297647570}
   - component: {fileID: 1297647569}
   - component: {fileID: 1297647568}
-  - component: {fileID: 1297647572}
-  - component: {fileID: 1297647573}
   m_Layer: 5
   m_Name: Main Canva
   m_TagString: Untagged
@@ -2691,6 +2722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Pause
   pauseGame: 27
   panelPause: {fileID: 447428904}
+  panelSettings: {fileID: 1206989571}
 --- !u!114 &1297647573
 MonoBehaviour:
   m_ObjectHideFlags: 0
