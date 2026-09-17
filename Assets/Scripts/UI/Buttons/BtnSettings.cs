@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BtnSettings : MonoBehaviour
@@ -20,6 +21,10 @@ public class BtnSettings : MonoBehaviour
     {
         panelPause.SetActive(false);
         panelSettings.SetActive(true);
-        Time.timeScale = 0;
+
+        if (SceneManager.GetActiveScene().name == "Gameplay")
+        {
+            Time.timeScale = 0;
+        }
     }
 }

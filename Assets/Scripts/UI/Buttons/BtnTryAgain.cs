@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BtnTryAgain : MonoBehaviour
 {
@@ -22,6 +22,7 @@ public class BtnTryAgain : MonoBehaviour
         player.isOver = false;
         Time.timeScale = 1;
         player.score = 0;
+        player.jumpForce = 5f;
         SceneManager.LoadScene("Gameplay");
     }
 }
