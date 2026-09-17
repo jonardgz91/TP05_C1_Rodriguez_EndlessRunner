@@ -1,13 +1,14 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class PlayerCollide : MonoBehaviour
 {
+    [SerializeField] private PlayerDataSo player;
     [SerializeField] private Rigidbody2D rbPlayer;
     [SerializeField] private GameObject panelGameOver;
     [SerializeField] private AudioClip loseClip;
     [SerializeField] private AudioSource backgroudMusic;
     private AudioSource audioSource;
-    private bool isOver;
 
     private void Awake()
     {
@@ -17,7 +18,7 @@ public class PlayerCollide : MonoBehaviour
 
     private void Update()
     {
-        if (isOver)
+        if(player.isOver)
         {
             Time.timeScale = 0;
             panelGameOver.SetActive(true);
@@ -32,7 +33,7 @@ public class PlayerCollide : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("EnemyGreenCube"))
         {
-            isOver = true;
+            player.isOver = true;
             backgroudMusic.Stop();
             audioSource.PlayOneShot(loseClip);
         }

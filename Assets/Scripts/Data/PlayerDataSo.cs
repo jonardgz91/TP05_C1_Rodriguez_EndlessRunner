@@ -8,4 +8,5 @@ public class PlayerDataSo : ScriptableObject
     public float jumpForce = 5f;
     public float initialSpeed = 5f;
     public float score = 0;
+    public bool isOver = false;
 }
