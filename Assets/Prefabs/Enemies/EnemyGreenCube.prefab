@@ -50,7 +50,7 @@ MonoBehaviour:
   enemyTree: {fileID: 4618768053261230176}
   player: {fileID: 0}
   xOffset: 20
-  spawnY: -4
+  spawnY: -2
 --- !u!212 &4005712010817786300
 SpriteRenderer:
   serializedVersion: 2

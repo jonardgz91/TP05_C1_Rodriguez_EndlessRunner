@@ -11,7 +11,7 @@ public class PlayerCollide : MonoBehaviour
         rbPlayer = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    private void Update()
     {
         if (isOver)
         {

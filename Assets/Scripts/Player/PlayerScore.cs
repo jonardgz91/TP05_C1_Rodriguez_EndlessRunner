@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerScore : MonoBehaviour
 {
     [SerializeField] private PlayerDataSo player;
-    void Update()
+    private void Update()
     {
         player.score += Time.deltaTime;
     }
