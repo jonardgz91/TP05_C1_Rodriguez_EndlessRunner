@@ -607,6 +607,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCollide
   rbPlayer: {fileID: 320911923}
   panelGameOver: {fileID: 1599039598}
+  loseClip: {fileID: 8300000, guid: 143fe54245e36b24d9d92438fc720d3b, type: 3}
+  backgroudMusic: {fileID: 1167780185}
 --- !u!114 &320911930
 MonoBehaviour:
   m_ObjectHideFlags: 0
