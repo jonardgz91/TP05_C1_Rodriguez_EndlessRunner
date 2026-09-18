@@ -15,5 +15,5 @@ MonoBehaviour:
   jump: 32
   jumpForce: 5
   initialSpeed: 10
-  score: 500.60864
+  score: 0
   isOver: 0

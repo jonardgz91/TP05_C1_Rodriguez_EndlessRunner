@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class BtnMainMenu : MonoBehaviour
 {
+    [SerializeField] private PlayerDataSo player;
     [SerializeField] private Button btnMainMenu;
 
     private void Awake()
@@ -18,6 +19,8 @@ public class BtnMainMenu : MonoBehaviour
 
     private void MainMenuClicked()
     {
+        player.isOver = false;
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
 }

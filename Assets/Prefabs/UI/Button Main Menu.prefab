@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f2b30b0ac7c2340a16bd14b3987ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BtnMainMenu
+  player: {fileID: 11400000, guid: 9299e827c124f9941bac51a2e7dcae7b, type: 2}
   btnMainMenu: {fileID: 6064646699844043118}
 --- !u!222 &4266939394384697784
 CanvasRenderer:
