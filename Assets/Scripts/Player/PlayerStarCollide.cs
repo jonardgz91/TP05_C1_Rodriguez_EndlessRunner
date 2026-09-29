@@ -5,7 +5,6 @@ public class PlayerStarCollide : MonoBehaviour
     [SerializeField] private Rigidbody2D rbPlayer;
     [SerializeField] private PlayerDataSo player;
     [SerializeField] private AudioClip starClip;
-    [SerializeField] private float powerUpDuration = 10.0f;
     private AudioSource audioSource;
 
     private void Awake()
@@ -18,15 +17,9 @@ public class PlayerStarCollide : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PowerUp"))
         {
-            player.jumpForce *= 1.3f;
+            player.lifes += 1;
             audioSource.PlayOneShot(starClip);            
             collision.gameObject.SetActive(false);
-            Invoke(nameof(ResetJumpForce), powerUpDuration);
         }
-    }
-
-    private void ResetJumpForce()
-    {
-        player.jumpForce /= 1.3f;
     }
 }

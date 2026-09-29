@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDataSo
   jump: 32
   lifes: 1
-  jumpForce: 7
-  score: 1.2187005
+  jumpForce: 6
+  score: 0
   isOver: 0
