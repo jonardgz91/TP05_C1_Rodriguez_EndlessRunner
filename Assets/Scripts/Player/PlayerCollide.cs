@@ -18,12 +18,12 @@ public class PlayerCollide : MonoBehaviour
 
     private void Update()
     {
-        if(player.isOver)
+        if (player.isOver)
         {
             Time.timeScale = 0;
             panelGameOver.SetActive(true);
         }
-        else 
+        else
         {
             panelGameOver.SetActive(false);
         }
@@ -33,9 +33,19 @@ public class PlayerCollide : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("EnemyGreenCube"))
         {
-            player.isOver = true;
-            backgroudMusic.Stop();
-            audioSource.PlayOneShot(loseClip);
+            player.lifes -= 1;
+            collision.collider.enabled = false;
+
+            if (player.lifes <= 0)
+            {
+                player.isOver = true;
+                backgroudMusic.Stop();
+                audioSource.PlayOneShot(loseClip);
+            }
+            else
+            {
+                audioSource.PlayOneShot(loseClip);
+            }
         }
     }
 }
