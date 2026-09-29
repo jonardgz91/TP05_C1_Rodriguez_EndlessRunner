@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6867749557980836989}
-  - component: {fileID: 986086334306347012}
+  - component: {fileID: 489369616507535208}
+  - component: {fileID: 7139228278127309620}
   - component: {fileID: 8250879023362222190}
   - component: {fileID: 5798450359997865454}
   - component: {fileID: 230572404546002157}
@@ -35,7 +36,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &986086334306347012
+--- !u!114 &489369616507535208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,13 +45,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 6036264424260240810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 693e89d3d349e934697c0c0df3c4c382, type: 3}
+  m_Script: {fileID: 11500000, guid: 66c884dc86ad3c444ad699c35e763d31, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StarSpawner
-  star: {fileID: 6036264424260240810}
-  player: {fileID: 0}
-  xOffset: 42
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
+  spawnObject: {fileID: 6036264424260240810}
+  xLimit: -10
+  xIncitial: 14
   spawnY: -3
+  time: 10
+  repeatRate: 20
+  spawnObjectSpeed: 5
+--- !u!114 &7139228278127309620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6036264424260240810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e0681294c78e648b8a2341e7a7980f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
+  movingObstacle: {fileID: 6036264424260240810}
+  rbmovingObstacle: {fileID: 5798450359997865454}
+  movingObstacleSpeed: 5
 --- !u!212 &8250879023362222190
 SpriteRenderer:
   serializedVersion: 2
@@ -136,7 +155,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &230572404546002157
 CircleCollider2D:
   m_ObjectHideFlags: 0

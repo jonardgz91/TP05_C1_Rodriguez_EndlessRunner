@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerDataSo : ScriptableObject
 {
     public KeyCode jump;
-    public float jumpForce = 5f;
-    public float initialSpeed = 5f;
+    public int lifes = 1;
+    public float jumpForce = 7f;
     public float score = 0;
     public bool isOver = false;
 }

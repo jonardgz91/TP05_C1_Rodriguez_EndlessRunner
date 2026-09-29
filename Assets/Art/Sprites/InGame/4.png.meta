@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 443e77358f539b949bb7322918cf1dfb
+guid: 2600602b72464234b9fc2f6f97bbd9a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1557063065896705536
-    second: background_color_desert_0
+      213: -4178046375966092550
+    second: 4_0
+  - first:
+      213: 8982099749623107299
+    second: 4_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background_color_desert_0
+      name: 4_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 512
-        height: 512
+        width: 1098
+        height: 590
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00e57a7db9ccb9510800000000000000
-      internalID: 1557063065896705536
+      spriteID: af2de6115f89406c0800000000000000
+      internalID: -4178046375966092550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_1
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 0
+        width: 518
+        height: 531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee09611224d6ac70800000000000000
+      internalID: 8982099749623107299
       vertices: []
       indices: 
       edges: []
@@ -138,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      background_color_desert_0: 1557063065896705536
+      4_0: -4178046375966092550
+      4_1: 8982099749623107299
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

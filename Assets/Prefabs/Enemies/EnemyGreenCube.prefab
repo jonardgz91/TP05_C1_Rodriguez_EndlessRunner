@@ -9,13 +9,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6090705872389677263}
-  - component: {fileID: 5036907680658501717}
+  - component: {fileID: 2463528780121506096}
+  - component: {fileID: 4846836134040799273}
   - component: {fileID: 4005712010817786300}
   - component: {fileID: 8779556118406360815}
   - component: {fileID: 360494391594178576}
   m_Layer: 0
   m_Name: EnemyGreenCube
-  m_TagString: Untagged
+  m_TagString: EnemyGreenCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,7 +36,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5036907680658501717
+--- !u!114 &2463528780121506096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4618768053261230176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e0681294c78e648b8a2341e7a7980f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
+  movingObstacle: {fileID: 4618768053261230176}
+  rbmovingObstacle: {fileID: 8779556118406360815}
+  movingObstacleSpeed: 5
+--- !u!114 &4846836134040799273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,10 +63,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c884dc86ad3c444ad699c35e763d31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  enemyTree: {fileID: 4618768053261230176}
-  player: {fileID: 0}
-  xOffset: 20
-  spawnY: -2
+  spawnObject: {fileID: 4618768053261230176}
+  xLimit: -10
+  xIncitial: 10
+  spawnY: -4
+  time: 3
+  repeatRate: 8
+  spawnObjectSpeed: 5
 --- !u!212 &4005712010817786300
 SpriteRenderer:
   serializedVersion: 2
@@ -118,14 +137,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4618768053261230176}
-  m_BodyType: 2
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -136,7 +155,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!61 &360494391594178576
 BoxCollider2D:
   m_ObjectHideFlags: 0
