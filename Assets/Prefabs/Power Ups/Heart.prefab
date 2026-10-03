@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8506342715309030633}
-  - component: {fileID: 6618686584418567234}
   - component: {fileID: 412860634441460837}
+  - component: {fileID: 6618686584418567234}
   - component: {fileID: 5192889465063903136}
   - component: {fileID: 4638054441874776731}
-  - component: {fileID: 5677843468548909947}
+  - component: {fileID: 4503303518257945880}
   - component: {fileID: 8412222224240957757}
   m_Layer: 0
   m_Name: Heart
@@ -37,6 +37,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &412860634441460837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6332336424491683060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e0681294c78e648b8a2341e7a7980f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
+  movingObstacle: {fileID: 6332336424491683060}
+  rbmovingObstacle: {fileID: 4638054441874776731}
+  movingObstacleSpeed: 5
 --- !u!114 &6618686584418567234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,21 +71,6 @@ MonoBehaviour:
   time: 10
   repeatRate: 20
   spawnObjectSpeed: 5
---- !u!114 &412860634441460837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6332336424491683060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9e0681294c78e648b8a2341e7a7980f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
-  movingObstacle: {fileID: 6332336424491683060}
-  rbmovingObstacle: {fileID: 4638054441874776731}
-  movingObstacleSpeed: 5
 --- !u!212 &5192889465063903136
 SpriteRenderer:
   serializedVersion: 2
@@ -157,7 +157,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &5677843468548909947
+--- !u!58 &4503303518257945880
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,8 +191,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.020410359}
-  m_Radius: 0.43041033
+  m_Offset: {x: 0, y: 0.0145596415}
+  m_Radius: 0.13544036
 --- !u!95 &8412222224240957757
 Animator:
   serializedVersion: 7

@@ -4153,9 +4153,25 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5677843468548909947, guid: 69b3b88880f18c24383db4c46863261c, type: 3}
+      propertyPath: m_Radius
+      value: 0.1454401
+      objectReference: {fileID: 0}
+    - target: {fileID: 5677843468548909947, guid: 69b3b88880f18c24383db4c46863261c, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0113043785
+      objectReference: {fileID: 0}
+    - target: {fileID: 5677843468548909947, guid: 69b3b88880f18c24383db4c46863261c, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6332336424491683060, guid: 69b3b88880f18c24383db4c46863261c, type: 3}
       propertyPath: m_Name
       value: Heart
+      objectReference: {fileID: 0}
+    - target: {fileID: 6332336424491683060, guid: 69b3b88880f18c24383db4c46863261c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8506342715309030633, guid: 69b3b88880f18c24383db4c46863261c, type: 3}
       propertyPath: m_LocalScale.x
@@ -4167,7 +4183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8506342715309030633, guid: 69b3b88880f18c24383db4c46863261c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 8506342715309030633, guid: 69b3b88880f18c24383db4c46863261c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4218,9 +4234,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1335580380}
     m_Modifications:
+    - target: {fileID: 63691407866926408, guid: 3c0a7b1f37787a842b58a5aac94621a5, type: 3}
+      propertyPath: movingObstacleSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2275823213012419539, guid: 3c0a7b1f37787a842b58a5aac94621a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15
+      value: -13
       objectReference: {fileID: 0}
     - target: {fileID: 2275823213012419539, guid: 3c0a7b1f37787a842b58a5aac94621a5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4261,6 +4281,10 @@ PrefabInstance:
     - target: {fileID: 7151001782672285630, guid: 3c0a7b1f37787a842b58a5aac94621a5, type: 3}
       propertyPath: m_Name
       value: Invincible
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151001782672285630, guid: 3c0a7b1f37787a842b58a5aac94621a5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4405,9 +4429,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyGreenCube
       objectReference: {fileID: 0}
+    - target: {fileID: 4846836134040799273, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
+      propertyPath: repeatRate
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6090705872389677263, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 6090705872389677263, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4874,9 +4902,25 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2890370699262637217, guid: 4bf48fc409290b749972fcb615836264, type: 3}
+    - target: {fileID: 81379286860583949, guid: c06b8f53d8ef0e84f91eb84edb016e53, type: 3}
+      propertyPath: time
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 81379286860583949, guid: c06b8f53d8ef0e84f91eb84edb016e53, type: 3}
+      propertyPath: xLimit
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 81379286860583949, guid: c06b8f53d8ef0e84f91eb84edb016e53, type: 3}
+      propertyPath: repeatRate
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7936001473127074207, guid: c06b8f53d8ef0e84f91eb84edb016e53, type: 3}
       propertyPath: m_Name
       value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936001473127074207, guid: c06b8f53d8ef0e84f91eb84edb016e53, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8868645123710617339, guid: c06b8f53d8ef0e84f91eb84edb016e53, type: 3}
       propertyPath: m_LocalScale.x
@@ -4888,7 +4932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8868645123710617339, guid: c06b8f53d8ef0e84f91eb84edb016e53, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 8868645123710617339, guid: c06b8f53d8ef0e84f91eb84edb016e53, type: 3}
       propertyPath: m_LocalPosition.y

@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour
     private void Spawn()
     {
         Vector2 spawnPosition = new Vector2(xIncitial, spawnY);
-        GameObject Tree = Instantiate(spawnObject, spawnPosition, Quaternion.identity);
-        Destroy(Tree, 4f);
+        GameObject obstacle = Instantiate(spawnObject, spawnPosition, Quaternion.identity);
+        activeObjects.Add(obstacle.transform);
     }
 }
