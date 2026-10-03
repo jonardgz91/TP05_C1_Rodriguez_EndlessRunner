@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -9,7 +10,7 @@ public class PlayerCollide : MonoBehaviour
     [SerializeField] private AudioClip loseClip;
     [SerializeField] private AudioSource backgroudMusic;
     private AudioSource audioSource;
-
+    [SerializeField] private PlayerHeartCollide PlayerHeartCollide;
     private void Awake()
     {
         rbPlayer = GetComponent<Rigidbody2D>();
@@ -35,12 +36,14 @@ public class PlayerCollide : MonoBehaviour
         {
             player.lifes -= 1;
             collision.collider.enabled = false;
+            PlayerHeartCollide.NotifyLifeChanged();
 
             if (player.lifes <= 0)
             {
                 player.isOver = true;
                 backgroudMusic.Stop();
                 audioSource.PlayOneShot(loseClip);
+                player.lifes = 1;
             }
             else
             {

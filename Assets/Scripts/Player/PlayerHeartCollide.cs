@@ -1,11 +1,13 @@
+using System;
 using UnityEngine;
 
-public class PlayerStarCollide : MonoBehaviour
+public class PlayerHeartCollide : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rbPlayer;
     [SerializeField] private PlayerDataSo player;
     [SerializeField] private AudioClip starClip;
     private AudioSource audioSource;
+    public event Action<int> onLifeUpdate;
 
     private void Awake()
     {
@@ -17,9 +19,15 @@ public class PlayerStarCollide : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PowerUp"))
         {
-            player.lifes += 1;
-            audioSource.PlayOneShot(starClip);            
+            player.lifes = Math.Clamp(player.lifes + 1, 0, 3);
+            audioSource.PlayOneShot(starClip);
+
             collision.gameObject.SetActive(false);
+            onLifeUpdate?.Invoke(player.lifes);
         }
+    }
+    public void NotifyLifeChanged()
+    {
+        onLifeUpdate?.Invoke(player.lifes);
     }
 }
