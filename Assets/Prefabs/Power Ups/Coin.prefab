@@ -69,7 +69,7 @@ MonoBehaviour:
   xIncitial: 12
   spawnY: -3
   time: 3
-  repeatRate: 4
+  repeatRate: 5
   spawnObjectSpeed: 5
 --- !u!212 &64684340191966269
 SpriteRenderer:

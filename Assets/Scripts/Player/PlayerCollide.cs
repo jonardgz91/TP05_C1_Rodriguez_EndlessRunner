@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class PlayerCollide : MonoBehaviour
 {
@@ -11,6 +9,7 @@ public class PlayerCollide : MonoBehaviour
     [SerializeField] private AudioSource backgroudMusic;
     private AudioSource audioSource;
     [SerializeField] private PlayerHeartCollide PlayerHeartCollide;
+
     private void Awake()
     {
         rbPlayer = GetComponent<Rigidbody2D>();
@@ -28,7 +27,8 @@ public class PlayerCollide : MonoBehaviour
         {
             panelGameOver.SetActive(false);
         }
-    }
+
+}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

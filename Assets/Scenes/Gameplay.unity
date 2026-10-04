@@ -2068,6 +2068,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3309156038014272855, guid: 59be9088bd4b6b14a9c8d13b17a47a57, type: 3}
   m_PrefabInstance: {fileID: 2197135577936391236}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &1152041021 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 360494391594178576, guid: 9e99a826fda02114eaeaf5998f8dc2a2, type: 3}
+  m_PrefabInstance: {fileID: 2174703228238991144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1163070211
 GameObject:
   m_ObjectHideFlags: 0
@@ -4278,6 +4283,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4525227032795620267, guid: 3c0a7b1f37787a842b58a5aac94621a5, type: 3}
+      propertyPath: m_Constraints
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7151001782672285630, guid: 3c0a7b1f37787a842b58a5aac94621a5, type: 3}
       propertyPath: m_Name
       value: Invincible
@@ -4285,6 +4294,10 @@ PrefabInstance:
     - target: {fileID: 7151001782672285630, guid: 3c0a7b1f37787a842b58a5aac94621a5, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151001782672285630, guid: 3c0a7b1f37787a842b58a5aac94621a5, type: 3}
+      propertyPath: m_TagString
+      value: Invincible
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4655,6 +4668,10 @@ PrefabInstance:
       propertyPath: backgroudMusic
       value: 
       objectReference: {fileID: 1167780185}
+    - target: {fileID: 6925105773906668165, guid: f7707e184703d444ea5fca7473ba92b3, type: 3}
+      propertyPath: enemyCollider
+      value: 
+      objectReference: {fileID: 1152041021}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

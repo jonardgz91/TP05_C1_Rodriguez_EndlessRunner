@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1933284414456030443}
   - component: {fileID: 8737807748236600209}
   - component: {fileID: 2062256932928155781}
+  - component: {fileID: 6925105773906668165}
   - component: {fileID: 8973109146812438480}
   - component: {fileID: 5924630243062907338}
   - component: {fileID: 3213794603388853694}
@@ -134,6 +135,20 @@ MonoBehaviour:
   rbPlayer: {fileID: 5924630243062907338}
   player: {fileID: 11400000, guid: 9299e827c124f9941bac51a2e7dcae7b, type: 2}
   starClip: {fileID: 8300000, guid: 53324ca590d858b41a124d075cfd1d03, type: 3}
+--- !u!114 &6925105773906668165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2318514778051033674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45dc9865893d3cd4791ae2f05882b0b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInvicible
+  playerCollider: {fileID: 3213794603388853694}
+  player: {fileID: 11400000, guid: 9299e827c124f9941bac51a2e7dcae7b, type: 2}
 --- !u!212 &8973109146812438480
 SpriteRenderer:
   serializedVersion: 2
