@@ -1,7 +1,6 @@
 # ESPAÑOL
-# TP05_C1_Rodriguez_EndlessRunner
 Desarrollado por: Jonathan Rodríguez
-https://jonardgz.itch.io/
+[https://jonardgz.itch.io/](https://jonardgz.itch.io/corre-guachin)
 
 ## Objetivo
 Sumar la mayor cantidad de puntos.
@@ -31,9 +30,8 @@ Se puede ajustar el sonido de:
 Al perder todas las vidas.
 
 # ENGLISH
-# TP05_C1_Rodriguez_EndlessRunner
 Developed by: Jonathan Rodríguez
-https://jonardgz.itch.io/
+[https://jonardgz.itch.io/](https://jonardgz.itch.io/corre-guachin)
 
 ## Objective
 Score as many points as possible.
